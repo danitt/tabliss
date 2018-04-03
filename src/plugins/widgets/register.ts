@@ -5,6 +5,7 @@ import { Font, FontSettings } from './font';
 import { Greeting, GreetingSettings } from './greeting';
 import { Links, LinksSettings } from './links';
 import { Message, MessageSettings } from './message';
+import { Mortality, MortalitySettings } from './mortality';
 import { Quote, QuoteSettings } from './quote';
 import { Search, SearchSettings } from './search';
 import { Time, TimeSettings } from './time';
@@ -40,6 +41,14 @@ registerPlugin({
   title: 'Message',
   Dashboard: Message,
   Settings: MessageSettings,
+});
+
+registerPlugin({
+  key: 'core/widgets/mortality',
+  type: Type.WIDGET,
+  title: 'Mortality',
+  Dashboard: Mortality,
+  Settings: MortalitySettings,
 });
 
 registerPlugin({
